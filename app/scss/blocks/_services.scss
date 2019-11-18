@@ -1,0 +1,23 @@
+.services {
+  margin-bottom: 55px;
+
+  @include _992 {
+    margin-bottom: 100px;
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      max-width: calc((100% - 30px) / 3);
+
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,16 @@
+.header {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 25px;
+  padding-bottom: 15px;
+
+  @include _992 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

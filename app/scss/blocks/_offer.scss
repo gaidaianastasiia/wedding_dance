@@ -1,0 +1,56 @@
+.offer {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  &__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 34px;
+
+    text-align: center;
+  }
+
+  &__icon {
+    font-size: 40px;
+    color: $accent-color;
+    line-height: 1;
+  }
+
+  .icon-emotions {
+    font-size: 50px;
+    line-height: 35px;
+  }
+
+  &__description {
+    margin-top: 10px;
+  }
+
+  @include _992 {
+    margin-bottom: 40px;
+
+    &__item {
+      flex: 0 0 25%;
+      max-width: 25%;
+      padding-bottom: 60px;
+    }
+
+    &__icon {
+      font-size: 65px;
+    }
+
+    .icon-emotions {
+      font-size: 65px;
+      line-height: 1;
+    }
+
+    &__description {
+      padding: 0 35px;
+    }
+  }
+}

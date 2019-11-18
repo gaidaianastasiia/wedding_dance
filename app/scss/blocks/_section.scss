@@ -1,0 +1,23 @@
+.section {
+  &__title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  @include _992 {
+    &__title {
+      margin-bottom: 24px;
+      font-size: 36px;
+    }
+
+    &__text {
+      max-width: 58.333333%;
+      margin-bottom: 40px;
+    }
+  }
+}
