@@ -1,1 +1,37 @@
-$(document).ready(function(){$("#toggle").click(function(){$(this).toggleClass("open"),$("#nav").toggleClass("opened")}),$(".nav__link").click(function(){$("#toggle").hasClass("open")&&$("#toggle").removeClass("open")}),$(".nav__link").click(function(){$("#nav").hasClass("opened")&&$("#nav").removeClass("opened")}),992<=window.innerWidth?($(".services__items").removeClass("services__slider"),console.log("work")):$(".services__slider").slick({fade:!0,autoplaySpeed:3e3,arrows:!1,dots:!0,pauseOnFocus:!1,pauseOnHover:!1,autoplay:!0})});
+$(document).ready(function () {
+    $("#toggle").click(function () {
+        $(this).toggleClass("open");
+        $("#nav").toggleClass("opened");
+    });
+
+    $('.nav__link').click(function () {
+        if ($('#toggle').hasClass('open')) {
+            $('#toggle').removeClass('open');
+        }
+    });
+
+    $('.nav__link').click(function () {
+        if ($('#nav').hasClass('opened')) {
+            $('#nav').removeClass('opened');
+        }
+    });
+
+
+    $('.services__slider').slick({
+        mobileFirst: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        autoplay: true,
+        infinite: true,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: 'unslick'
+          }
+        ]
+    });
+});
