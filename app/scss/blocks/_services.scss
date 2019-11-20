@@ -21,14 +21,6 @@
     align-items: stretch;
   }
 
-  @include _992 {
-    margin-bottom: 100px;
-
-    &__item {
-      max-width: calc((100% - 30px) / 3);
-    }
-  }
-
   .slick-dots {
     position: static;
 
@@ -54,6 +46,14 @@
         background-color: $accent-color;
         border-color: $accent-color;
       }
+    }
+  }
+
+  @include _992 {
+    margin-bottom: 100px;
+
+    &__item {
+      max-width: calc((100% - 30px) / 3);
     }
   }
 }
