@@ -3,19 +3,22 @@
 
   &__items {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
     flex-wrap: wrap;
   }
 
   &__item {
     width: 75vw;
     margin-right: 15px;
+    height: auto;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: stretch;
   }
 
   @include _992 {
