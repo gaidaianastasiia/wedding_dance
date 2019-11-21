@@ -1,5 +1,10 @@
 .services {
   margin-bottom: 55px;
+  overflow-x: hidden;
+
+  .slick-list {
+    overflow: visible;
+  }
 
   .slick-track {
     display: flex;
@@ -50,6 +55,7 @@
 
   @include _992 {
     margin-bottom: 100px;
+    overflow-x: visible;
 
     &__item {
       max-width: calc((100% - 30px) / 3);

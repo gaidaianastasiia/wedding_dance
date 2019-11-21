@@ -1,5 +1,9 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +13,11 @@
   padding-top: 25px;
   padding-bottom: 15px;
 
+  background-color: #fff;
+
   @include _992 {
+    position: static;
+
     padding-top: 20px;
     padding-bottom: 20px;
   }
