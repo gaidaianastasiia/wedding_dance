@@ -1,5 +1,7 @@
 .btn {
-  padding: 6px 33px;
+  min-width: 116px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 
   text-align: center;
   font-weight: 600;
@@ -16,7 +18,10 @@
   }
 
   &_pink {
-    padding: 10px 40px;
+    min-width: 162px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     border-color: $accent-color;
     color: $accent-color;
 
