@@ -1,5 +1,5 @@
 .services {
-  margin-bottom: 55px;
+  padding-bottom: 55px;
   overflow-x: hidden;
 
   .slick-list {
@@ -8,6 +8,10 @@
 
   .slick-track {
     display: flex;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
   }
 
   &__items {
@@ -54,7 +58,7 @@
   }
 
   @include _992 {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     overflow-x: visible;
 
     &__item {
