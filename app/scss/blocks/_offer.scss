@@ -35,7 +35,7 @@
     margin-top: 10px;
   }
 
-  @include _992 {
+  @include media(992px) {
     &__item {
       flex: 0 0 25%;
       max-width: 25%;

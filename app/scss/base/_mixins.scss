@@ -1,28 +1,7 @@
-// Using
-//.div {
-//   @include _1200 {
-//       @content;
-//   }
-//}
-@mixin _1200 {
-    @media (min-width: 1200px){
-        @content;
-    }
-}
-@mixin _992 {
-    @media (min-width: 992px){
-        @content;
-    }
-}
-@mixin _768 {
-    @media (min-width: 768px){
-        @content;
-    }
-}
-@mixin _576 {
-    @media (min-width: 576px){
-        @content;
-    }
+@mixin media($size) {
+  @media (min-width: $size){
+      @content;
+  }
 }
 
 @mixin pseudo($display: block, $pos: absolute, $content: ''){

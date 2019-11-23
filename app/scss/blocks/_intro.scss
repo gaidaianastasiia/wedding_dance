@@ -35,7 +35,7 @@
     order: -1;
   }
 
-  @include _992 {
+  @include media(992px) {
     flex-direction: row;
     margin-top: 0;
 
@@ -61,7 +61,7 @@
       order: 0;
       flex: 0 0 66.666667%;
       max-width: 66.666667%;
-      
+
       object-fit: cover;
     }
   }

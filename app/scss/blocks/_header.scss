@@ -15,7 +15,7 @@
 
   background-color: #fff;
 
-  @include _992 {
+  @include media(992px) {
     position: static;
 
     padding-top: 20px;
@@ -71,7 +71,7 @@
     }
   }
 
-  @include _992 {
+  @include media(992px) {
     display: none;
   }
 

@@ -1,14 +1,5 @@
 .logo {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 1;
-
-  &_white {
-    font-size: $font-size-mobile;
-    color: #fff;
-
-    @include _992 {
-      font-size: 18px;
-    }
-  }
 }

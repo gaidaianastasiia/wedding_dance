@@ -1,12 +1,12 @@
 {
-  "name": "gulp-start",
+  "name": "wedding",
   "version": "1.0.0",
-  "description": "start gulp",
+  "description": "wedding dance website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vadim Prokopchuk",
+  "author": "Gayday Anastasya",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",

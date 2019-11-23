@@ -10,9 +10,9 @@
     margin-bottom: 30px;
   }
 
-  @include _992 {
+  @include media(992px) {
     padding-bottom: 100px;
-    
+
     &__title {
       margin-bottom: 24px;
       font-size: 36px;

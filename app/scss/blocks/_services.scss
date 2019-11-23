@@ -51,9 +51,9 @@
     }
   }
 
-  @include _992 {
+  @include media(992px) {
     overflow-y: visible;
-     
+
     &__items {
       display: flex;
       flex-wrap: wrap;
