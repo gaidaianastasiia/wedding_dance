@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 70px;
-  padding-bottom: 55px;
 
   &__content {
     padding-top: 30px;
@@ -36,10 +35,9 @@
     order: -1;
   }
 
-  @include _1200 {
+  @include _992 {
     flex-direction: row;
     margin-top: 0;
-    padding-bottom: 100px;
 
     &__content {
       flex: 0 0 33.333333%;
@@ -60,9 +58,11 @@
     }
 
     &__img {
-      order: 2;
+      order: 0;
       flex: 0 0 66.666667%;
       max-width: 66.666667%;
+      
+      object-fit: cover;
     }
   }
 }

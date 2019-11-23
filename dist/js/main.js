@@ -29,7 +29,7 @@ $(document).ready(function () {
         variableWidth: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 992,
             settings: 'unslick'
           }
         ]
