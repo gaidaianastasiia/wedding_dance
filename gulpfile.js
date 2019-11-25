@@ -36,9 +36,9 @@ gulp.task('js', function () {
 });
 
 gulp.task('jsBuild', function () {
-    return gulp.src('app/js/*.js')
+    return gulp.src('app/js/main.js')
     .pipe(uglify())
-    .pipe(gulp.dest('app/js'))
+    .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -75,8 +75,8 @@ gulp.task('export', function () {
     let BuildCss = gulp.src('app/css/**/*.css')
         .pipe(gulp.dest('dist/css'));
 
-    let BuildJs = gulp.src('app/js/**/*.js')
-        .pipe(gulp.dest('dist/js'));
+    let BuildJs = gulp.src('app/js/lib/*.js')
+        .pipe(gulp.dest('dist/js/lib'));
 
     let BuildFonts = gulp.src('app/fonts/**/*.*')
         .pipe(gulp.dest('dist/fonts'));
@@ -91,6 +91,6 @@ gulp.task('watch', function () {
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('build', gulp.series('clean', 'export'))
+gulp.task('build', gulp.series('clean', 'jsBuild', 'export'))
 
 gulp.task('default', gulp.parallel('scss', 'js', 'browser-sync', 'watch'))
